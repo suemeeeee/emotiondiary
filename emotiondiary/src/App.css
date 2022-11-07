@@ -1,3 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Yeon+Sung&display=swap");
+
+body {
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nanum Pen Script";
+  min-height: 100vh;
+  margin: 0px;
+}
+
+/* media 쿼리. 
+반응형 웹 만들때 사용.(중요!) 
+웹 브라우저의 화면이 650px 이상일 때만 아래 규칙이 적용이 됨.  */
+@media (min-width: 650px) {
+  .App {
+    width: 640px;
+  }
+}
+
+@media (max-width: 650px) {
+  .App {
+    width: 640px;
+  }
+}
+
+#root {
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
 .App {
-  padding: 20px;
+  min-height: 100vh;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* My Button */
+.MyButton {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  font-size: 18px;
+  font-family: "Nanum Pen Script";
+
+  white-space: nowrap;
+  /* 노워랩: 버튼 안의 글자가 잘려서 두줄이 되지 않도록 하는 속성 */
+}
+
+.MyButton_default {
+  background-color: #ececec;
+  color: black;
+}
+
+.MyButton_positive {
+  background-color: #64c964;
+  color: white;
+}
+
+.MyButton_nagative {
+  background-color: #fd565f;
+  color: white;
 }
