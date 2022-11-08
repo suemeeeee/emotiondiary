@@ -1,8 +1,9 @@
 const MyButton = ({ text, type, onClick }) => {
+  const btnType = ["positive", "nagative"].includes(type) ? type : "default";
   return (
     // type에 따라 className 달라지게!
     <button
-      className={["MyButton", `MyButton_${type}`].join(" ")}
+      className={["MyButton", `MyButton_${btnType}`].join(" ")}
       onClick={onClick}
     >
       {text}
